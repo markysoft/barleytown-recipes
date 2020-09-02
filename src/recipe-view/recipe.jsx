@@ -21,7 +21,7 @@ export default function Recipe(props) {
         <Grid item sm={6}>
           <DetailsCard details={malt} />
           <DetailsCard details={hops} />
-          { yeasts.items && <DetailsCard details={yeasts} />}
+          {yeasts.items && <DetailsCard details={yeasts} />}
         </Grid>
         <Grid item sm={6}>
           <IngredientsNotes title="Fermentables" ingredients={ingredientsDetails.fermentables} />
