@@ -30,7 +30,6 @@ export default function Recipe(props) {
           <IngredientsNotes title="Hops" ingredients={ingredientsDetails.hops} />
         </Grid>
       </Grid>
-
     </>
   )
 }
