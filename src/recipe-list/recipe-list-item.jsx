@@ -51,7 +51,7 @@ RecipeListItem.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     abv: PropTypes.string.isRequired,
-    color: PropTypes.number,
+    color: PropTypes.number.isRequired,
   }).isRequired,
 }
 

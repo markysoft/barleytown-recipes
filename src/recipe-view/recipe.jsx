@@ -11,26 +11,24 @@ export default function Recipe(props) {
     name, notes, overview, malt, hops, yeasts, ingredientsDetails,
   } = props
   return (
-    <>
-      <Grid container spacing={1}>
-        <Grid item xs={12}><h1>{name}</h1></Grid>
-        <Grid item sm={6}>
-          <DetailsCard details={overview} />
-          <RecipeNotes notes={notes} />
-        </Grid>
-        <Grid item sm={6}>
-          <DetailsCard details={malt} />
-          <DetailsCard details={hops} />
-          {yeasts.items && <DetailsCard details={yeasts} />}
-        </Grid>
-        <Grid item sm={6}>
-          <IngredientsNotes title="Fermentables" ingredients={ingredientsDetails.fermentables} />
-        </Grid>
-        <Grid item sm={6}>
-          <IngredientsNotes title="Hops" ingredients={ingredientsDetails.hops} />
-        </Grid>
+    <Grid container spacing={1}>
+      <Grid item xs={12}><h1>{name}</h1></Grid>
+      <Grid item sm={6}>
+        <DetailsCard details={overview} />
+        <RecipeNotes notes={notes} />
       </Grid>
-    </>
+      <Grid item sm={6}>
+        <DetailsCard details={malt} />
+        <DetailsCard details={hops} />
+        {yeasts.items && <DetailsCard details={yeasts} />}
+      </Grid>
+      <Grid item sm={6}>
+        <IngredientsNotes title="Fermentables" ingredients={ingredientsDetails.fermentables} />
+      </Grid>
+      <Grid item sm={6}>
+        <IngredientsNotes title="Hops" ingredients={ingredientsDetails.hops} />
+      </Grid>
+    </Grid>
   )
 }
 

@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 
 import Header from '../header/header'
-import RecipeList from '../recipe-list/recipe-list'
+import RecipeListContainer from '../recipe-list/recipe-list-container'
 import RecipeContainer from '../recipe-view/recipe-container'
 
 
@@ -16,7 +16,7 @@ export default function Routing() {
       <Header />
       <Switch>
         <Route path="/recipe/:recipeId" component={RecipeContainer} />
-        <Route path="/" component={RecipeList} />
+        <Route path="/" component={RecipeListContainer} />
       </Switch>
     </Router>
   )
